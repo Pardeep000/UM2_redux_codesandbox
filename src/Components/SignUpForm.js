@@ -87,6 +87,8 @@ export default function SignUpForm() {
     let per = passValidate(userInput);
     if (per === true) {
       dispatch(addUser(userInput));
+      //I want to see immediate change here in the success value
+      console.log(success)
       //
       console.log("signup success", success);
       //
